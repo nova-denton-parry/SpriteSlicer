@@ -23,29 +23,7 @@ A command-line tool for slicing sprite sheets into individual images by row, wit
 
 <details>
 <summary>Click to expand the flow diagram</summary>
-```mermaid
-flowchart TD
-    A([Start]) --> B(Enter sprite sheet path)
-    B --> C(Enter output folder)
-    C --> D(Enter stage width)
-    D --> E(Set defaults - optional)
-    E --> F(Set suffix - optional)
-    F --> G(Jump to row - optional)
-    G --> H(Row loop)
-    H --> I{Y < total height?}
-    I ---> |no| K([End])
-    I --> |yes| J(Process row)
-    J --> L(Enter number of stages - or default)
-    L --> M(Enter row height - or default)
-    M --> N(Enter image name - or default)
-    N --> O{File exists?}
-    O --> |no| Q
-    O --> |yes| P{Overwrite?}
-    P --> |yes| Q(Slice and save)
-    P --> |no| N
-    Q --> R(Advance Y position)
-    R --> I
-```
+![Flow diagram](mermaid_diagram.png)
 </details>
 
 ## Usage
