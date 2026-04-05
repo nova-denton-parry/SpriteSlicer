@@ -20,6 +20,9 @@ A command-line tool for slicing sprite sheets into individual images by row, wit
 - No installation required - runs as a standalone executable
 
 ## How It Works
+
+<details>
+<summary>Click to expand the flow diagram</summary>
 ```mermaid
 flowchart TD
     A([Start]) --> B(Enter sprite sheet path)
@@ -43,6 +46,7 @@ flowchart TD
     Q --> R(Advance Y position)
     R --> I
 ```
+</details>
 
 ## Usage
 
